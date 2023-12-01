@@ -12,7 +12,7 @@ botoes.forEach((botao) => {
     if (valor === "=") {
       // Quando o botão "=" é clicado, avalie a expressão e atualize o resultado
       try {
-        resultado.textContent = eval(expressao);x
+        resultado.textContent = eval(expressao);
       } catch (error) {
         resultado.textContent = "Erro";
       }
@@ -27,7 +27,7 @@ botoes.forEach((botao) => {
     }else {
       // Adicione o valor do botão à expressão
       expressao += valor;
-      resultado.textContent = expressao;
+      resultado.textContent = valor;
     }
   });
 });
